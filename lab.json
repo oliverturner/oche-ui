@@ -48,7 +48,7 @@
         "Button",
         "Box"
       ],
-      "jsx": "<Box>\n  <Button>Hi</Button>\n  <Button>There</Button>\n</Box>",
+      "jsx": "<Box>\n  <Button mr={2}>Hi</Button>\n  <Button mr={2}>There</Button>\n</Box>",
       "examples": [
         "<ControlBar />"
       ],
@@ -57,10 +57,28 @@
     {
       "name": "Box",
       "type": "div",
-      "props": {},
-      "style": {},
+      "props": {
+        "py": 1,
+        "px": 2
+      },
+      "style": {
+        "background": "cornflowerblue",
+        "color": "white"
+      },
       "examples": [
         "<Box>Hello</Box>"
+      ],
+      "system": []
+    },
+    {
+      "name": "BoxAlert",
+      "type": "Box",
+      "props": {},
+      "style": {
+        "background": "red"
+      },
+      "examples": [
+        "<BoxAlert>Hello</BoxAlert>"
       ],
       "system": []
     },
