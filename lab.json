@@ -46,11 +46,12 @@
       "name": "ControlBar",
       "imports": [
         "Button",
-        "Box"
+        "Box",
+        "H1"
       ],
-      "jsx": "<Box>\n  <Button mr={2}>Hi</Button>\n  <Button mr={2}>There</Button>\n</Box>",
+      "jsx": "<Box>\n  {props.title \n    ? <H1>{props.title}</H1>\n    : null\n  }\n  {props.buttons.map(btn => (\n    <Button mr={2}>{btn}</Button>\n  ))}\n</Box>",
       "examples": [
-        "<ControlBar />"
+        "\n<ControlBar \n  title=\"hello\"\n  buttons={[\n  \"hi\", \"there\"\n  ]} />"
       ],
       "system": []
     },
@@ -62,8 +63,7 @@
         "px": 2
       },
       "style": {
-        "background": "cornflowerblue",
-        "color": "white"
+        "border": "1px solid currentColor"
       },
       "examples": [
         "<Box>Hello</Box>"
