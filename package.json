@@ -1,0 +1,22 @@
+{
+  "name": "@oliverturner/oche-ui",
+  "description": "Components used in building Oche",
+  "homepage": "https://github.com/oliverturner/oche-ui",
+  "version": "1.0.1",
+  "author": "Oliver Turner",
+  "private": false,
+  "dependencies": {
+    "@compositor/mono": "0.0.3"
+  },
+  "devDependencies": {
+    "@compositor/lab": "1.0.0-33"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "lab --pkg -d dist",
+    "start": "lab --pkg -wd dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
